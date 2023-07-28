@@ -9,6 +9,7 @@ import androidx.room.PrimaryKey
 data class Meal(
 
     @PrimaryKey(autoGenerate = true) val id:Int?,
+    @ColumnInfo()val mealtname: String?,
     @ColumnInfo()val mealtype: String?,
     @ColumnInfo() val numberofpeople:Int?,
     @ColumnInfo() val difficultylevel: String?,
